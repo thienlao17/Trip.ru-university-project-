@@ -345,7 +345,7 @@ html {
 }
 
 .header__btn {
-  padding: 15px;
+  padding: 20px;
   background-image: url(../img/home\ copy.svg);
   background-position: 10px center;
   background-size: 18px 18px;
@@ -477,6 +477,7 @@ html {
 .hotels-list {
   display: flex;
   flex-direction: column;
+  gap: 30px;
 }
 
 .hotels-heading {
