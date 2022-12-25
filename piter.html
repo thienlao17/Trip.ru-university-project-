@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <title>Питер</title>
+  <script defer src="./src/js/hotels-app.js"></script>
+  <script>
+      let defArray = []
+      document.addEventListener("DOMContentLoaded", function () {
+          createHotelsApp(document.getElementById("hotels-app"), "Предложения в Питере")
+      });
+  </script>
+</head>
+<body>
+  <div class="header__page-container container">
+    <a href="./index.html" class="header__page-link">На главную</a>
+    
+  </div>
+  <div class="container">
+    <form   class="container-form add-hotel-form">
+      <span class="header-line"></span>
+      <span class="container-form-group">
+          <label class="section-form-label" for="hotelname">Название отеля</label>
+          <input class="section-form-inpout name-input" type="text"  name="hotelname" id="hotelname">         
+      </span>
+      <span class="container-form-group">
+        <label class="section-form-label" for="hotelname">Город</label>
+        <input class="section-form-inpout name-input" type="text"   id="city">         
+    </span>
+      <span class="header-line"></span>
+      <span class="container-form-group">
+          <label class="section-form-label" for="namber1">Звёзд</label>
+          <input class="section-form-inpout stars-input"  type="number"  name="hight" id="namber1">         
+      </span>
+      <span class="header-line"></span>
+      <span class="container-form-group">
+          <label class="section-form-label" for="namber2">Цена</label>
+          <input class="section-form-inpout price-input" type="number"  name="tourists" id="namber2" >     
+      </span>
+      <button class="header__btn btn" id="form-btn">Выставить отель</button>
+  </div>
+  <div class="container" id="hotels-app">
+  </div>
+</body>
+</html>

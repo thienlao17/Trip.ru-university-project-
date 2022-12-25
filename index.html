@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trip.ru</title>
+  <link rel="stylesheet" href="./src/css/style.css">
+  <script src="./src/js/slider.js" defer></script>
+  <script src="./src/js/modal.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <div class="logo header__logo"><a href=""><img src="./src/img/logo.svg" alt="logo"></a></div>
+      <button class="otziv">Написать отзыв</button>
+    </div>
+    <div class="modal">
+      <div class="modal__main">
+        <h2 class="modal__title">Обратная связь</h2>
+        <div class="modal__container">
+          <form>
+            <div class="feedback-field">
+                <label for="feedback-form"></label>
+                <textarea id="feedback-form" class="feedback-textarea" placeholder="Напиши отзыв на данный сайт" rows="1"></textarea>
+                <input class="feedback-btn border" type="submit" value="Отправить">
+            </div>
+         </form>
+        </div>
+
+        <button class="modal__close"><img src="./src/img/cross.svg" class="modal__img"></button>
+      </div>
+    </div>
+  </header>
+  <section class="form">
+    <div class="container form__container">
+      <h1 class="form__heading">Отели, квартиры и дома <br> ищите сразу на Trip.ru</h1>
+      <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="container-form">
+        <span class="container-form-group">
+            <label class="section-form-label" for="city">Город вылета</label>
+            <select class="section-form-inpout" name="departurecity" id="city">
+                <option>Москва</option>
+                <option>Санкт-Петербург</option>
+                <option>Екатеринбург</option>
+                <option>Нижний Новгород</option>
+                <option>Новосибирск</option>
+                <option>Казань</option>
+                <option>Красноярск</option>
+                <option>Челябинск</option>
+            </select>
+        </span>
+        <span class="header-line"></span>
+        <span class="container-form-group">
+            <label class="section-form-label" for="country">Страна</label>
+            <select class="section-form-inpout" name="country" id="country">
+                <option>Канада</option>
+                <option>Франция</option>
+                <option>Германия</option>
+                <option>Италия</option>
+                <option>Япония</option>
+                <option>Россия</option>
+                <option>Великобритания</option>
+                <option>США</option>
+            </select>
+        </span>
+        <span class="header-line"></span>
+        <span class="container-form-group">
+            <label class="section-form-label" for="date">Дата прибытия</label>
+            <input class="section-form-inpout" type="date" value="2022-04-15" name="date" id="date">
+        </span>
+        <span class="header-line"></span>
+        <span class="container-form-group">
+            <label class="section-form-label" for="namber1">Ночей</label>
+            <input class="section-form-inpout" type="number" value="6" name="hight" id="namber1">         
+        </span>
+        <span class="header-line"></span>
+        <span class="container-form-group">
+            <label class="section-form-label" for="namber2">Туристы</label>
+            <input class="section-form-inpout" type="number" value="1" name="tourists" id="namber2" required>     
+        </span>
+        <span class="header-line"></span>
+        <button type="submit" class="btn btn-form">Найти</button>
+    </form>
+    </div>
+  </section>
+  <section class="hero">
+    <div class="container hero__container">
+      <h1 class="hero__heading">Популярные направления</h1>
+      <ul class="hero__cards">
+        <li class="hero__cards-item piter">
+          <div class="hero__cards-content">
+            <h1 class="hero__cards-heading">Питер</h1>
+            <a class="hero__cards-text " href="piter.html">7083 варианта</a>
+          </div>
+        </li>
+        <li class="hero__cards-item msk">
+          <div class="hero__cards-content">
+            <h1 class="hero__cards-heading">Москва</h1>
+            <a class="hero__cards-text " href="msk.html">9039 варианта</a>
+          </div>
+        </li>
+        <li class="hero__cards-item kazan">
+          <div class="hero__cards-content">
+            <h1 class="hero__cards-heading">Казань</h1>
+            <a class="hero__cards-text " href="kazan.html">5  459 варианта</a>
+          </div>
+        </li>
+        <li class="hero__cards-item sochi">
+          <div class="hero__cards-content">
+            <h1 class="hero__cards-heading">Сочи</h1>
+            <a class="hero__cards-text " href="sochi.html">10124 варианта</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section__why">
+    <div class="container why__container">
+      <h1 class="why__heading">Почему Trip.ru</h1>
+      <div class="slider__container">
+      <button class="slider-prev"></button>
+      <div class="slider">
+        <div class="slider-line">
+          <div class="content">
+            <img src="./src/img/null_ruble.svg" alt="" class="content__img">
+            <h1 class="content__heading">Бесплатная отмена для повторного бронирования</h1>
+            <p class="content__text">Вы можете бесплатно отменить бронирование для повторного бронирования согласно правилам отмены</p>
+          </div>
+          <div class="content">
+            <img src="./src/img/reliably.svg" alt="" class="content__img">
+            <h1 class="content__heading">Надёжно</h1>
+            <p class="content__text">Все жилье проверено. TRIP выступает гарантом договорённостей сторон при бронировании.</p>
+          </div>
+          <div class="content">
+            <img src="./src/img/percent.svg" alt="" class="content__img">
+            <h1 class="content__heading">Без переплат</h1>
+            <p class="content__text">У TRIP нет наценок, стоимость устанавливают владельцы в своем личном кабинете.</p>
+          </div>
+        </div>
+      </div>
+    <button class="slider-next"></button>
+    </div>
+   </div>
+  </section>
+</body>
+</html>

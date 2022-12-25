@@ -1,0 +1,92 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0,0,0,0.5);
+  backdrop-filter: blur(2px);
+  display: flex;
+  cursor: pointer;
+  display: none;
+}
+
+.modal__main {
+  position: relative;
+  max-width: 600px;
+  background-color: azure;
+  margin: auto;
+  color: black;
+  border-radius: 16px;
+  cursor: default;
+  padding: 30px;
+}
+
+.modal__title {
+  margin-bottom: 30px;
+}
+
+.modal__close {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.modal__img {
+  width: 25px;
+  height: 25px;
+}
+
+
+.feedback-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.feedback-textarea {
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 400px;
+  height: 200px;
+  padding: 4px 10px;
+  border-radius: 12px;
+  resize: none;
+  overflow-y: hidden;
+  vertical-align: middle;
+  -webkit-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.04);
+  word-break: break-word;
+}
+
+.feedback-btn {
+  width: 150px;
+  height: 40px;
+  margin: 20px 0;
+  border-radius: 20px;
+  text-align: center;
+  -webkit-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+  -webkit-transition: ease .2s;
+  -o-transition: ease .2s;
+  transition: ease .2s;
+}
+
+.feedback-btn:hover {
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.modal__title {
+  font-weight: 600;
+  font-size: 36px;
+}
+
+.feedback-btn {
+  background-color: red !important;
+  color: white;
+  font-weight: 600;
+}

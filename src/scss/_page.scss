@@ -1,0 +1,75 @@
+.header__page-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0px;
+  align-items: center;
+}
+
+.header__page-link {
+  font-size: 26px;
+  font-weight: 600;
+  color: black;
+  transition: all .3s ease;
+  &:hover {
+    color: rgb(255, 0, 0);
+  }
+}
+
+.hotels-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.hotels-heading {
+  font-size: 48px;
+  margin-top: 20px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 50px;
+}
+.hotels-item {
+  padding: 40px;
+  box-shadow: 0 0 15px #e0e0e0;
+  border-radius: 15px;
+  background: linear-gradient(45deg, #f5f7fa, #c3cfe2);
+}
+.item-heading {
+  font-size: 60px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.stars {
+ display: flex;
+ gap: 5px;
+}
+.star {
+ background-image: url(../img/star-full.svg);
+ background-size: contain;
+ width: 25px;
+ margin-bottom: 10px;
+ height: 25px;
+}
+.city {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.price {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.item-link {
+  font-size: 24;
+}
+
+.item-label {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.delete-btn {
+  display: block;
+}

@@ -1,0 +1,50 @@
+.add-hotel-form {
+  background-color: lightgray !important;
+}
+
+.name-input {
+  border: 1px solid black !important;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.stars-input {
+  border: 1px solid black !important;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.price-input {
+  border: 1px solid black !important;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.add-btn {
+  background-color: red;
+  padding: 20px;
+  border-radius: 15px;
+  color: white;
+  transition: all .3s ease;
+  border: 1px solid red;
+  font-weight: 700;
+  &:hover {
+    background-color: white;
+    color: red;
+  }
+  margin-bottom: 5px;
+}
+
+.delete-btn {
+  background-color: red;
+  padding: 20px;
+  border-radius: 15px;
+  color: white;
+  transition: all .3s ease;
+  border: 1px solid red;
+  font-weight: 700;
+  &:hover {
+    background-color: white;
+    color: red;
+  }
+}

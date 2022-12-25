@@ -1,0 +1,25 @@
+@import "reset";
+@import "add-hotel";
+@import url(https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+* {
+  font-family: 'Montserrat';
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+html {
+  // background: linear-gradient(45deg, #fff1eb, #ace0f9);
+  height: 100vh;
+}
