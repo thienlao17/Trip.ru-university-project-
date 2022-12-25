@@ -200,7 +200,7 @@ legend {
 }
 
 .add-hotel-form {
-  background-color: lightgray !important;
+  background: linear-gradient(45deg, #a8edea, #fed6e3) !important;
 }
 
 .name-input {
@@ -411,7 +411,7 @@ html {
 
 .section-form-label {
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 12px;
   line-height: 12px;
   color: #000000;

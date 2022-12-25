@@ -23,7 +23,7 @@ function createAppItem (obj) {
   let btn = document.createElement('button')
   let deleteBtn = document.createElement('button')
   deleteBtn.textContent = 'Удалить'
-  btn.textContent = 'Написать продавцу'
+  btn.textContent = 'Сделать бронь'
   btn.classList.add('add-btn')
   item.classList.add('hotels-item')
   deleteBtn.classList.add('delete-btn')
@@ -52,8 +52,8 @@ function createAppItem (obj) {
   let itemPrice = document.createElement('p')
   itemPrice.classList.add('price')
   stars.classList.add('stars')
-  itemHeading.innerHTML = name 
-  itemCity.innerHTML = city
+  itemHeading.innerHTML = 'Отель: ' + name 
+  itemCity.innerHTML = 'Город: ' + city
   itemPrice.innerHTML = price + ' в сутки'
   item.append(itemHeading)
   item.append(stars)
